@@ -182,4 +182,12 @@ display(true_centers - data.median())  # Compare the centers with the median of 
 
 display(true_centers - data.mean()) # Compare the centers with the mean of the data
 
+# Display the predictions
+for i, pred in enumerate(sample_preds):
+    print("Sample point", i, "predicted to be in Cluster", pred)
+    
+samples
+
+# Display the clustering results based on 'Channel' data
+vs.channel_results(reduced_data, outliers, pca_samples)
 
